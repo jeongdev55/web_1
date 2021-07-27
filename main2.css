@@ -1,0 +1,267 @@
+*{
+    list-style:none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a{
+    color:white;
+    cursor: pointer;
+}
+.nav2 > ul > li> a {
+    color:white;
+    font-size: 11.5px;
+    text-decoration: none;
+}
+
+
+
+/*---------- top_bar--------------*/
+.container{
+    background-image: url("lounge.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+.navbar{
+    position:sticky;
+    top:0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: rgba(47, 47, 49, 0);
+    color: rgb(255, 255, 255);
+    transition: 1s 0s;
+}
+
+.navbar__logo{
+    font-size: 17px;
+    color:white;   
+
+}
+
+/*-----상단 메뉴바 부분*/
+.navbar__menu{
+    display: flex;
+}
+
+.navbar__menu li{
+    padding: 8px 16px;
+    text-align: center;
+}
+
+.navbar__menu li:hover{
+    background-color: rgba(173, 169, 169, 0.76);
+    border-radius: 4px;
+
+}
+
+.navbar__icons{
+    color: rgb(44, 43, 43);
+    list-style: none;
+    font-size: 17px;
+    display: flex;
+}
+
+.navbar__icons li{
+    padding: 8px 10px;
+}
+
+.barBtn{
+    display: none;
+    position:absolute;
+    right: 12px;
+    font-size: 20px;
+    color:blanchedalmond
+}
+
+
+/*---------- main_img and main_text--------------*/
+
+.top__img{
+    height: 75vh;
+    background-image: url("main_img2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20% ;
+    background: url("main_img2.jpg") no-repeat center/cover;
+}
+
+.main__text{
+    width: auto;
+    text-align: center;
+    padding-top: 231px ;
+}
+
+.main__text > h1{
+    font-size:48px;
+    color: white;
+
+}
+.main__text >h2{
+    font-size:28px;
+    color: white;
+}
+#main__icons {
+    font-size: 58px;
+    padding-bottom: 10px;
+
+}
+
+/*------nav2 오른쪽 상단 링크 바*/
+.nav2{
+    position: fixed;
+    right: 33px;
+    top: 25vh;
+}
+.nav2 > ul > li{
+    border:1px solid rgba(255, 255, 255, 0.397);
+    width: 55px;
+    padding: 5px;
+    text-align: left;
+    background-color: rgba(49, 48, 48, 0.493);
+}
+.nav2 > ul > li >a{
+    color: rgb(236, 68, 68);
+}
+
+
+/*------bottom img 나오는 부분*/
+.main__change__bar1{  
+    background-color: rgba(21, 255, 0, 0);
+    width: auto;
+    height:758px;
+    color:rgb(255, 255, 255);
+}
+
+.main__change__bar{
+    position: relative;
+    background-color: aqua;
+    width: auto;
+    height:1000px;
+    color:rgb(95, 63, 63);
+}
+
+.boot__text{
+    text-align: center;
+}
+
+/* produt__table 부분*/
+
+
+.produt__table{
+    margin: auto;
+    width: 80%;
+    height: 70%;
+    background-color: aliceblue;
+    
+}
+
+
+.product__menu{
+    width: 100%;
+    height: 700px;
+    background-color: white;
+}
+
+.produt__table > tr:nth-child(odd){
+    color: bisque;
+}
+
+
+.product__menu > p {
+    padding: 60px;
+    font-size: 37px;
+    font-weight:bold;
+    text-align: center;
+}
+
+
+/*푸터 부분*/
+.footer__bar{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+}
+.footer__bar > ul {
+    margin-left: 100px;
+}
+.footer__bar > ul > li> h2{
+    color: rgb(66, 66, 66);
+    padding-bottom: 7px;
+}
+
+.footer__bar > ul > li{
+    color: rgb(197, 198, 199);
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.footer__bar >ul > li:last-child{
+    padding-top: 20px;;
+    color: rgba(80, 82, 82, 0.822);
+}
+
+
+
+
+
+
+
+
+
+
+/*--------미디어 쿼리 부분---------*/
+
+@media screen and (max-width:768px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }    
+    .navbar__menu{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        display: none;
+
+    }
+    .navbar__menu li{
+        width: 100%;
+        
+    }
+    .navbar__icons{
+        justify-content: center;
+        width: 100%;
+        display: none;
+    }
+    .barBtn{
+        display: block;
+    }
+
+    .navbar__menu.active,
+    .navbar__icons.active{
+        display: flex;
+    }
+    .nav2{
+        display: none;
+    }
+    .main__text > h1{
+        font-size:33px;
+        color: white;
+        transition: 1s 0s;
+    
+    }
+    .main__text >h2{
+        font-size:13px;
+        color: white;
+        transition: 1s 0s;
+    }
+
+
+
+}
