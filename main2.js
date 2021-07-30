@@ -28,6 +28,7 @@ $(window).scroll(function(evt) {
          $("a").css("color","black");
          $(".navbar__logo").css("color","black");
          $(".navbar__icons").css("color","black");
+         $(".barBtn").css("color","black");
      }
  });
 
@@ -40,7 +41,8 @@ $(window).scroll(function(evt) {
         $("a").css("color","white");
         $(".navbar__logo").css("color","white");
         $(".navbar__icons").css("color","white");
-        
+        $(".barBtn").css("color","white");
 
     }
 });
+

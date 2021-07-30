@@ -22,9 +22,10 @@
 
             <ul class="navbar__menu">
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SERVICE</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#prodeuct">PRODUCT</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
 
             </ul>
 
@@ -38,42 +39,95 @@
                 <i class="fas fa-bars"></i>
             </div>
         </nav>
+
+        <div class="slider">
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <input type="radio" name="slide" id="slide4">
+            <ul id="imgholder" class="imgs">
+                <li><img src="img/img1.jpg"></li>
+                <li><img src="img/img2.jpg"></li>
+                <li><img src="img/img3.jpg"></li>
+                <li><img src="img/img4.jpg"></li>
+            </ul>
+            <div class="bullets">
+                <label for="slide1">&nbsp;</label>
+                <label for="slide2">&nbsp;</label>
+                <label for="slide3">&nbsp;</label>
+                <label for="slide4">&nbsp;</label>
+            </div>
+        </div>
         <div class="top__img">
             <div class="main__text">
                 <h1>당신의 특별한 순간을</h1>
                 <h2>눈부시게 담겠습니다.</h2>
             </div>
         </div>
+        <div class="about">
+            <div class="about_text">
+                <p>미소 스튜디오</p>아아아아인냥하세[여]<br>
+                우리는 누구누구누구구구<br>
+            </div>
+        </div>
+        
 
-    <div class="product__menu">
+    <div class="product__menu" id="prodeuct">
         <p>PRODUCT</p>
         <div class="product__menu__box">
-        <ul>
-            <li>#가족사진<br>
-            함께하여 행복한 우리 가족의 소중한 순간을 간직하세요</li>
+            <div class="item item1 hover2">
+                <ul class="btn hover1">
+                    <li>#가족사진<br>
+                    함께하여 행복한 우리 가족의 소중한 순간을 간직하세요</li>
+                </ul>
+            </div>
+            
+            <div class="item item2 hover2">       
+                <ul class="btn hover1">
+                    <li>#증명사진<br>
+                    솔직하고 담백한 당신의 모습을 담아드립니다.</li>
+                </ul>
+            </div>
+            
+            <div class="item item3 hover2">
+                <ul class="btn hover1">
+                    <li>#컨셉사진<br>
+                    다양한 컨셉의 사진으로 추억을 만들어드리겠습니다.</li>
+                </ul>
+            </div>
+            
+            <div class="item item4 hover2">
+                <ul class="btn hover1">
+                    <li>#우정/프로필 사진<br>
+                    소중한 '추억'을 친구와 함께 나누세요</li>
+                </ul>
+            </div>
 
-        </ul>
-        <ul >
-            <li>#리마인드 웨딩<br>
-            오랜시간 함께한 부부의 사랑을 담아드립니다.</li>
-        </ul>
-        <ul >
-            <li>#장수사진<br>
-            시간이 흘러도 품격있는 사진을 남겨드립니다</li>
-        </ul>
-        <ul>
-            <li>#우정/프로필 사진<br>
-            소중한 '추억'을 친구와 함께 나누세요</li>
-        </ul>
+            <div class="item item5 hover2">
+                <ul class="btn hover1">
+                    <li>#아기/돌사진<br>
+                    가장 예쁜 순간을 간직해드리겠습니다.</li>
+                </ul>
+            </div>
+
+            <div class="item item6 hover2">
+                <ul class="btn hover1">
+                    <li>#웨딩 사진<br>
+                    아름다운 '순간을' 더욱 아름답게 찍어드리겠습니다.</li>
+                </ul>
+            </div>
+            
+          </div>
 
 
-    </div>
+
+
     </div>
     <div class="main__change__bar">
     </div>
     <div class="main__img1">
     </div>
-    <div class="main__change__bar1">
+    <div class="main__change__bar1" id="about">
         <div class="boot__text">
             <h2>M I S O [ S T U D I O ]</h2>
             <br><br>
@@ -99,7 +153,7 @@
             기억하고 싶은 특별한 순간들을 촬영해드립니다.<br>
         </div>
     </div>
-    <div class="footer__bar">
+    <div class="footer__bar" id="contact">
         <ul class="text1">
             <br>
             <li><h2>미소 스튜디오 [ MISO STUDIO ]</h2></li>
