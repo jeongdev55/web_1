@@ -46,3 +46,19 @@ $(window).scroll(function(evt) {
     }
 });
 
+
+$(".slider input[type=radio]:nth-child(1)").click(function(){
+    $(".change__text>p").text("Beautiful").css("color","white").css("transition","2s");
+});
+
+$(".slider input[type=radio]:nth-child(2)").click(function(){
+    $(".change__text>p").text("Pretty").css("color","black").css("transition","2s");
+});
+
+$(".slider input[type=radio]:nth-child(3)").click(function(){
+    $(".change__text>p").text("Joyful").css("color","white").css("transition","2s");  
+});
+
+$(".slider input[type=radio]:nth-child(4)").click(function(){
+    $(".change__text>p").text("Forever").css("color","black").css("transition","2s");
+});

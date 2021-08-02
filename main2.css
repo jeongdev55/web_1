@@ -1,12 +1,100 @@
 
 
+
+*{
+    list-style:none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a{
+    color:white;
+    cursor: pointer;
+}
+.nav2 > ul > li> a {
+    color:white;
+    font-size: 11.5px;
+    text-decoration: none;
+}
+
+
+
+/*---------- top_bar--------------*/
+.container{
+    background-image: url("img/lounge.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+.navbar{
+    position:sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: rgb(47, 47, 49);
+    color: rgb(255, 255, 255);
+    transition: 1s 0s;
+    z-index : 2;
+}
+
+.navbar__logo{
+    font-size: 17px;
+    padding-left: 15px;
+    color:white;   
+
+}
+
+/*-----상단 메뉴바 부분*/
+.navbar__menu{
+    display: flex;
+}
+
+.navbar__menu li{
+    padding: 8px 16px;
+    text-align: center;
+}
+
+.navbar__menu li:hover{
+    background-color: rgba(173, 169, 169, 0.76);
+    border-radius: 4px;
+
+}
+
+.navbar__icons{
+    color: rgb(44, 43, 43);
+    list-style: none;
+    font-size: 17px;
+    display: flex;
+}
+
+.navbar__icons li{
+    padding: 8px 10px;
+}
+
+.barBtn{
+    display: none;
+    position:absolute;
+    right: 12px;
+    font-size: 20px;
+    color:blanchedalmond
+}
+
+/*----------main change img 부분*/
+
+
 .slider{
     width: 100%;
-    height: 75vh;
+    height: 920px;
     position: relative;
     margin: 0 auto;
     background: black;
     overflow: hidden;
+    z-index : 1;
 }
 
 .slider input[type=radio]{
@@ -83,87 +171,20 @@ ul.imgs li{
 
 
 
-*{
-    list-style:none;
-    text-decoration: none;
-    border-collapse: collapse;
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-a{
-    color:white;
-    cursor: pointer;
-}
-.nav2 > ul > li> a {
-    color:white;
-    font-size: 11.5px;
-    text-decoration: none;
-}
 
-
-
-/*---------- top_bar--------------*/
-.container{
-    background-image: url("img/lounge.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-
-}
-.navbar{
-    position:sticky;
-    top:0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 12px;
-    background: rgb(47, 47, 49);
-    color: rgb(255, 255, 255);
-    transition: 1s 0s;
-}
-
-.navbar__logo{
-    font-size: 17px;
-    padding-left: 15px;
-    color:white;   
-
-}
-
-/*-----상단 메뉴바 부분*/
-.navbar__menu{
-    display: flex;
-}
-
-.navbar__menu li{
-    padding: 8px 16px;
-    text-align: center;
-}
-
-.navbar__menu li:hover{
-    background-color: rgba(173, 169, 169, 0.76);
-    border-radius: 4px;
-
-}
-
-.navbar__icons{
-    color: rgb(44, 43, 43);
-    list-style: none;
-    font-size: 17px;
-    display: flex;
-}
-
-.navbar__icons li{
-    padding: 8px 10px;
-}
-
-.barBtn{
-    display: none;
+.change__text{
     position:absolute;
-    right: 12px;
-    font-size: 20px;
-    color:blanchedalmond
+    margin:150px;
+    padding: 100px;
+    font-size: 150px;
+    z-index: 2;
+    color: #fff;
+    font-weight:bolder;
+    font-family: 'Noto Sans KR';
+
+
 }
+
 
 
 /*---------- main_img and main_text--------------*/
@@ -197,6 +218,8 @@ a{
     padding-bottom: 10px;
 
 }
+
+
 
 /*----about부분*/
 .about{
